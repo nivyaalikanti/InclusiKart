@@ -1,0 +1,25 @@
+.productdetails {
+            background-color: white;
+            margin: auto;
+            padding: 40px;
+            width: 90%;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+        button {
+            background-color: #00437a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin:10px;
+        }
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+        button:hover {
+            background-color: rgb(2, 86, 155);
+        }
+        

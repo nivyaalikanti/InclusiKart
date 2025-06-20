@@ -1,0 +1,38 @@
+body {
+            font-family: 'Arial', sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #00437a; /* Green Color */
+            margin-bottom: 30px;
+        }
+        .request {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .request:hover {
+            transform: scale(1.01);
+        }
+        .request p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .request strong {
+            color: #00437a; /* Green Color */
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .request {
+                padding: 15px;
+            }
+        }

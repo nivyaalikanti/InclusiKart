@@ -1,0 +1,150 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00437a;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center them */
+    gap: 20px; /* Add space between stories */
+}
+
+.story {
+    flex: 1 1 300px; /* Make each story take up equal width, adjusting to minimum 300px */
+    max-width: 400px; /* Optional: maximum width to maintain design */
+    text-align:center;
+}
+/* Main story wrapper */
+.story {
+    text-align:center;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-wrap:wrap;
+}
+
+.story:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Title aligned above the video */
+.story-title {
+    text-align: right;
+    font-size: 1.6rem;
+    color: #00437a;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Top section: photo, text, and video side by side */
+.story-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Photo styling */
+.story-photo {
+    flex: 1;
+    min-width: 150px;
+}
+
+.story-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Description styling */
+.story-description {
+    flex: 2;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Video styling */
+.story-video {
+    flex: 1.5;
+}
+
+.story-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Lower two blocks */
+.story-bottom {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.story-card {
+    flex: 1;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .story-top {
+        flex-direction: column;
+    }
+
+    .story-title {
+        text-align: left;
+    }
+
+    .story-bottom {
+        flex-direction: column;
+    }
+}
+
+/* Decorative line */
+.story::after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: linear-gradient(90deg, #00437a, #00aaff);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #aaa;
+}
+#image{
+    width:50%;
+    object-fit:cover;
+}

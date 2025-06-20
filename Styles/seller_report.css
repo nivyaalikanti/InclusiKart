@@ -1,0 +1,46 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+
+        h2 {
+            color: #495057;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        #report {
+            margin-top: 20px;
+        }
+
+        #customer-feedback {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 5px solid #007bff;
+        }
+
+        strong {
+            color: #007bff;
+        }
+
+        #total-sales, #number-of-orders, #average-order-value {
+            font-weight: bold;
+            color: #28a745;
+        }

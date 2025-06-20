@@ -1,0 +1,241 @@
+/* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Header */
+        header {
+            background:rgba(179, 226, 226, 0.8);
+            color:rgba(0, 0, 0, 0.8);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center; /* Center align */
+            align-items: center;
+        }
+
+        header a {
+            color: #00437a;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Navbar */
+        nav {
+            background:  #00437a;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center; /* Center align */
+            align-items: center;
+        }
+
+        #nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        #nav-links a:hover {
+            border-radius: 5px;
+        }
+
+        #nav-links select {
+            background: white;
+            border: 1px solid white;
+            color: black;
+            font-size: 16px;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #nav-links select:focus {
+            outline: none;
+        }
+
+        /* Profile Icon */
+        .profile-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            vertical-align: middle;
+        }
+
+        /* Profile Popup */
+        .profile-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 1000;
+            width: 500px;
+            line-height:2.0;
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .close-btn, .logout-btn {
+            background:  #00437a;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            border:2px solid  #00437a;
+            border-radius:5px;
+            margin:10px;
+        }
+
+        .close-btn {
+            background: white;
+            /* border:2px solid  #00437a; */
+            color: #00437a;
+        }
+
+        /* Ensuring navbar height remains consistent */
+        header, nav {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding:40px;
+        }
+        .myproducts-btn{
+            background-color:white;
+            color:#00437a;
+            border:2px solid #00437a;
+            padding:10px;
+            font-weight:bold;
+        }
+        .myproducts-btn:hover{
+            background-color:rgb(228, 239, 249);
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #nav-links {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+
+            #nav-links a, #nav-links select {
+                width: auto;
+            }
+        }
+
+        .container{
+            line-height: 2.0;
+        }
+
+        .info-box{
+            line-height:1.8;
+            padding:40px;
+        }
+        body {
+            /* font-family: Arial, sans-serif;
+            background-color: #f4f4f4; */
+            /* display: flex; */
+            justify-content: center;
+            /* align-items: center; */
+            /* height: 100vh;
+            margin: 0; */
+            text-align:center;
+        }
+
+        form {
+            background: white;
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 450px;
+            margin-left:560px;
+        }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+        }
+
+        input {
+            width: 88%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .eye-icon {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: gray;
+            margin-right:20px;
+        }
+
+        button {
+            width: 91%;
+            padding: 10px;
+            background-color: #1f5989;;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .message, .password-error {
+            color: red;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .password-error {
+            display: none; /* Initially hidden */
+        }

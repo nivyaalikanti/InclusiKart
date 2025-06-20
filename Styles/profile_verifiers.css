@@ -1,0 +1,85 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 800px;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    .user-card {
+      background: #ffffff;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #00437a;
+    }
+    .user-card p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .user-card a {
+      display: inline-block;
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .approve {
+      background-color: #28a745;
+      color: white;
+    }
+    .approve:hover {
+      background-color: #218838;
+    }
+    .reject {
+      background-color: #dc3545;
+      color: white;
+    }
+    .reject:hover {
+      background-color: #c82333;
+    }
+    .document-link {
+      color: #00437a;
+      font-weight: bold;
+      
+
+    }
+    .document-link a{
+      text-decoration:underline;
+    }
+    .document-link:hover {
+      text-decoration: underline;
+    }
+    .logout {
+      background-color: #00437a; /* Red color for logout */
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px; /* Space below the button */
+      display: block; /* Make it a block element */
+      text-align: center; /* Center the text */
+      text-decoration: none; /* Remove underline */
+      width: 10%;
+    }
+    .logout:hover {
+      background-color:rgb(0, 84, 153); /* Darker red on hover */
+    }

@@ -1,0 +1,209 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: rgba(179, 226, 226, 0.8);
+            color: rgba(0, 0, 0, 0.8);
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        header a {
+            color: #00437a;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+        nav {
+            background: #00437a;
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        #nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        #nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+        #nav-links a:hover {
+            border-radius: 5px;
+        }
+        #nav-links select {
+            background: white;
+            border: 1px solid white;
+            color: black;
+            font-size: 16px;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #nav-links select:focus {
+            outline: none;
+        }
+        .profile-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            vertical-align: middle;
+        }
+        .profile-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            z-index: 1000;
+            width: 500px;
+            line-height: 2.0;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .close-btn, .logout-btn {
+            background: #00437a;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .close-btn {
+            background: white;
+            color: #00437a;
+            border: 2px solid #00437a;
+        }
+        .myproducts-btn{
+            background-color:white;
+            color:#00437a;
+            border:2px solid #00437a;
+            padding:10px;
+            font-weight:bold;
+        }
+        .myproducts-btn:hover{
+            background-color:rgb(228, 239, 249);
+        }
+        #status-color{
+            background-color: rgba(124, 223, 131, 0.88);
+            color:black;
+            border-radius:10px;
+            padding:7px;
+        }
+        
+        @media screen and (max-width: 768px) {
+    nav {
+        /* flex-direction: column; */
+        align-items: center;
+        padding: 15px;
+    }
+
+    #nav-links {
+        /* flex-direction: column; */
+        width: 100%;
+        text-align: center;
+        display: flex !important; /* Force visible always */
+    }
+
+    #nav-links a,
+    #nav-links select {
+        font-size: 14px;         /* Decreased font size */
+        padding: 8px 10px;       /* Slightly tighter spacing */
+        width: 100%;             /* Full width look */
+    }
+
+    .profile-icon {
+        margin-top: 10px;
+    }
+}
+
+        
+/* NAVBAR ENDED */
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container h2 {
+    color: #00437a;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.container form input[type="text"],
+.container form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.loginbtn {
+    background-color: #00437a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.loginbtn:hover {
+    background-color: #0060aa;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.container p {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.container a {
+    color: #00437a;
+    text-decoration: underline;
+}
+
