@@ -1,0 +1,2 @@
+# InclusiKart
+A web-based platform designed to support and empower specially-abled individuals by providing them with a digital space to display their unique talents, sell handmade or self-made products, and share their inspiring stories. This platform aims to bridge the gap between specially-abled entrepreneurs and potential buyers, creating a more inclusive, empathetic, and economically empowered society.
