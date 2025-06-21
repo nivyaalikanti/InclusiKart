@@ -1,0 +1,59 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0d47a1;
+        }
+
+        .story {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .story h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .story p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        video, img {
+            margin-top: 10px;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        button {
+            background-color:rgb(13, 161, 25);
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[name="action"][value="reject"] {
+            background-color: #d32f2f;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
