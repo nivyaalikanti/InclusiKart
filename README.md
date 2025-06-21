@@ -1,4 +1,4 @@
-## 🧩 InclusiKart
+## 🧩 INCLUSIKART
 
  A web-based platform built to **empower specially-abled individuals** by providing a dedicated digital space where they can:
 
@@ -7,14 +7,14 @@
 
 The platform promotes **inclusion and economic empowerment** by giving specially-abled entrepreneurs an opportunity to reach a **wider audience of supportive buyers**.
 
-### ♿ Accessibility-Focused Design
+### ♿ ACCESSIBILITY FOCUSED DESIGN
 
 InclusiKart places a strong emphasis on **accessibility**, ensuring that everyone can use the platform with ease. Key features include:
 
 - 🔊 **Voice navigation** for users with visual or motor impairments  
 - 🎨 Clean, user-friendly design for better usability
 
-## ✨ Features
+## ✨ FEATURES
 
 ### 👤 User Management
 - **Seller Registration**: Specially-abled users can sign up with disability certificate verification.
@@ -34,7 +34,7 @@ InclusiKart places a strong emphasis on **accessibility**, ensuring that everyon
 ### 🔊 Voice Navigation
 - **Hands-Free Navigation**: Users can explore and interact with the platform using voice commands, improving accessibility for those with physical or visual limitations.
 
-## 🛠️ Tech Stack
+## 🛠️ TECH STACK
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend:** PHP  
