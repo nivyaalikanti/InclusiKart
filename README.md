@@ -14,3 +14,24 @@ InclusiKart places a strong emphasis on **accessibility**, ensuring that everyon
 - 🔊 **Voice navigation** for users with visual or motor impairments  
 - 🎨 Clean, user-friendly design for better usability
 
+## ✨ Features
+
+### 👤 User Management
+- **Seller Registration**: Specially-abled users can sign up with disability certificate verification.
+- **Secure Authentication**: Role-based login system for Sellers, Buyers, and Admins.
+
+### 🛍️ Marketplace Functionality
+- **Product Upload**: Sellers can upload their handmade or self-made products.
+- **Admin Approval**: All listings are reviewed by admins before appearing on the site.
+- **Buyer Interface**: Clean and intuitive design for browsing and purchasing products.
+
+### 📖 Story Sharing
+- **Inspiring Journeys**: Sellers can share their personal stories to highlight their talents and challenges.
+
+### 🛠️ Admin Dashboard
+- **Moderation Tools**: Admins can manage users, products, and stories through a dedicated dashboard.
+
+### 🔊 Voice Navigation
+- **Hands-Free Navigation**: Users can explore and interact with the platform using voice commands, improving accessibility for those with physical or visual limitations.
+
+
