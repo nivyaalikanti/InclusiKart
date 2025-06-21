@@ -34,4 +34,14 @@ InclusiKart places a strong emphasis on **accessibility**, ensuring that everyon
 ### 🔊 Voice Navigation
 - **Hands-Free Navigation**: Users can explore and interact with the platform using voice commands, improving accessibility for those with physical or visual limitations.
 
+## 🛠️ Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL  
+- **Authentication:** Session-based (using PHP sessions)  
+- **Voice Navigation:** Implemented using [Annyang.js](https://www.talater.com/annyang/) – a lightweight JavaScript library for adding voice commands  
+- **Development Tools:** Visual Studio Code, XAMPP  
+- **Status:** Actively maintained and version-controlled via GitHub
+
 
