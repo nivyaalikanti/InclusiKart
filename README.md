@@ -7,7 +7,7 @@
 
 The platform promotes **inclusion and economic empowerment** by giving specially-abled entrepreneurs an opportunity to reach a **wider audience of supportive buyers**.
 
-### ♿ ACCESSIBILITY FOCUSED DESIGN
+## ♿ ACCESSIBILITY FOCUSED DESIGN
 
 InclusiKart places a strong emphasis on **accessibility**, ensuring that everyone can use the platform with ease. Key features include:
 
