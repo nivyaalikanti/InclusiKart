@@ -364,7 +364,7 @@ if ($isLoggedIn) {
                 </select>
                 <select onchange="location = this.value;">
                     <option disabled selected>Sign Up</option>
-                    <option value="signup.php">Seller</option>
+                    <option value="Seller/signup.php">Seller</option>
                     <option value="Buyer/bsignup.php">Buyer</option>
                 </select>
             <?php endif; ?>
