@@ -348,7 +348,7 @@ if ($isLoggedIn) {
         <div id="nav-links">
             <a href="index.php" id="nav-home">Home</a>
             <a href="shop.php" id="nav-shop">Shop</a>
-            <a href="cart.php" id="nav-cart">Cart</a>
+            <a href="Buyer/cart.php" id="nav-cart">Cart</a>
             <a href="stories.php" id="nav-stories">Stories</a>
             <a href="donation_requests.php" id="nav-donate">Donate</a>
 
@@ -360,12 +360,12 @@ if ($isLoggedIn) {
                 <select onchange="location = this.value;">
                     <option disabled selected>Login</option>
                     <option value="login.php">Seller Login</option>
-                    <option value="blogin.php">Buyer  Login</option>
+                    <option value="Buyer/blogin.php">Buyer  Login</option>
                 </select>
                 <select onchange="location = this.value;">
                     <option disabled selected>Sign Up</option>
                     <option value="signup.php">Seller</option>
-                    <option value="bsignup.php">Buyer</option>
+                    <option value="Buyer/bsignup.php">Buyer</option>
                 </select>
             <?php endif; ?>
         </div>
@@ -418,7 +418,7 @@ if ($isLoggedIn) {
         <?php endif; ?>
     <?php endif; ?>
     <?php if ($isBuyer): ?>
-        <button class="cta-button myproducts-btn" onclick="window.location.href='order_history.php'">My Orders</button>
+        <button class="cta-button myproducts-btn" onclick="window.location.href='Buyer/order_history.php'">My Orders</button>
     <?php endif; ?>
     <button class="logout-btn" onclick="window.location.href='logout.php'">Logout</button>
     <button class="close-btn" id="close-popup">Close</button>
