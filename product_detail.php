@@ -28,7 +28,7 @@ if ($product_id != 0) {
 if (isset($_POST['add_to_cart'])) {
     // Check if user is logged in
     if (!isset($_SESSION['buyer_id'])) {
-        header("Location: blogin.php");
+        header("Location: Buyer/blogin.php");
         exit();
     }
 
@@ -63,7 +63,7 @@ if (isset($_POST['add_to_cart'])) {
 if (isset($_POST['request_product'])) {
     // Check if user is logged in
     if (!isset($_SESSION['buyer_id'])) {
-        header("Location: blogin.php");
+        header("Location: Buyer/blogin.php");
         exit();
     }
 
