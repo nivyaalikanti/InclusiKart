@@ -56,7 +56,7 @@ if ($isLoggedIn) {
 if (isset($_POST['add_to_cart'])) {
     // Check if user is logged in
     if (!isset($_SESSION['buyer_id'])) {
-        header("Location: blogin.php");
+        header("Location: Buyer/blogin.php");
         exit();
     }
 
@@ -83,7 +83,7 @@ if (isset($_POST['add_to_cart'])) {
         $insertStmt->execute();
     }
 
-    header("Location: cart.php");
+    header("Location: Buyer/cart.php");
     exit();
 }
 
@@ -107,7 +107,7 @@ $result = $conn->query($productQuery);
         <div id="nav-links">
             <a href="index.php" id="nav-home">Home</a>
             <a href="shop.php" id="nav-shop">Shop</a>
-            <a href="cart.php" id="nav-cart">Cart</a>
+            <a href="Buyer/cart.php" id="nav-cart">Cart</a>
             <a href="stories.php" id="nav-stories">Stories</a>
             <a href="donation_requests.php" id="nav-donate">Donate</a>
 
@@ -118,13 +118,13 @@ $result = $conn->query($productQuery);
 
                 <select onchange="location = this.value;">
                     <option disabled selected>Login</option>
-                    <option value="login.php">Seller Login</option>
-                    <option value="blogin.php">Buyer  Login</option>
+                    <option value="Seller/login.php">Seller Login</option>
+                    <option value="Buyer/blogin.php">Buyer  Login</option>
                 </select>
                 <select onchange="location = this.value;">
                     <option disabled selected>Sign Up</option>
-                    <option value="signup.php">Seller</option>
-                    <option value="bsignup.php">Buyer</option>
+                    <option value="Seller/signup.php">Seller</option>
+                    <option value="Buyer/bsignup.php">Buyer</option>
                 </select>
             <?php endif; ?>
         </div>
@@ -173,15 +173,15 @@ $result = $conn->query($productQuery);
             <button class="cta-button" onclick="window.location.href='sell.php'">Register a Product</button>
             <button class="cta-button" onclick="window.location.href='share_story.php'">Share My Story</button>
             <button class="cta-button" onclick="window.location.href='help.php'">Help</button><br><br>
-            <button id="my-products-btn"class="cta-button myproducts-btn" onclick="window.location.href='myproducts_details.php'">My Products Details</button>
+            <button id="my-products-btn"class="cta-button myproducts-btn" onclick="window.location.href='Seller/myproducts_details.php'">My Products Details</button>
             <button class="cta-button myproducts-btn" onclick="window.location.href='mystory.php'">My Story</button>
             <br><br>
         <?php endif; ?>
     <?php endif; ?>
     <?php if ($isBuyer): ?>
-        <button class="cta-button myproducts-btn" onclick="window.location.href='order_history.php'">My Orders</button>
+        <button class="cta-button myproducts-btn" onclick="window.location.href='Buyer/order_history.php'">My Orders</button>
     <?php endif; ?>
-    <button class="logout-btn" onclick="window.location.href='logout.php'">Logout</button>
+    <button class="logout-btn" onclick="window.location.href='Seller/logout.php'">Logout</button>
     <button class="close-btn" id="close-popup">Close</button>
 </div>
 
@@ -219,7 +219,7 @@ $result = $conn->query($productQuery);
                 const productId = this.dataset.productId; // Get the product ID
 
                 // Increment views via AJAX
-                fetch('increment_views.php', {
+                fetch('Seller/increment_views.php', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
