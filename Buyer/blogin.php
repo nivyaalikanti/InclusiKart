@@ -109,12 +109,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php else: ?>
             <select onchange="location = this.value;">
                 <option "disabled selected>Login</option>
-                <option value="login.php">Seller Login</option>
+                <option value="../Seller/login.php">Seller Login</option>
                 <option value="blogin.php">Buyer Login</option>
             </select>
             <select onchange="location = this.value;">
                 <option disabled selected>Sign Up</option>
-                <option value="signup.php">Seller</option>
+                <option value="../Seller/signup.php">Seller</option>
                 <option value="bsignup.php">Buyer</option>
             </select>
         <?php endif; ?>
