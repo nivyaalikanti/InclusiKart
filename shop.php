@@ -97,6 +97,23 @@ $result = $conn->query($productQuery);
     <title>Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Styles/shop.css">
+    <style>
+.product-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #f0f0f0; /* fallback */
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops edges, fills fully */
+  display: block;
+}
+
+    </style>
 </head>
 <body>
 <header>
@@ -148,7 +165,7 @@ $result = $conn->query($productQuery);
 </a>
                 <h3><?php echo htmlspecialchars($row['name']); ?></h3>
                 <p>Price: ₹<?php echo $row['price']; ?></p>
-                <p>Description: <?php echo htmlspecialchars($row['description']); ?></p>
+                <p><?php echo htmlspecialchars($row['description']); ?></p>
                 <form method="POST">
                     <input type="hidden" name="product_id" value="<?php echo $row['id']; ?>">
                     <input type="number" name="quantity" value="1" min="1">
@@ -170,11 +187,11 @@ $result = $conn->query($productQuery);
 
         <?php if ($status === "verified"): ?>
             <br>
-            <button class="cta-button" onclick="window.location.href='sell.php'">Register a Product</button>
-            <button class="cta-button" onclick="window.location.href='share_story.php'">Share My Story</button>
-            <button class="cta-button" onclick="window.location.href='help.php'">Help</button><br><br>
+            <button class="cta-button" onclick="window.location.href='Seller/sell.php'">Register a Product</button>
+            <button class="cta-button" onclick="window.location.href='Seller/share_story.php'">Share My Story</button>
+            <button class="cta-button" onclick="window.location.href='Seller/help.php'">Help</button><br><br>
             <button id="my-products-btn"class="cta-button myproducts-btn" onclick="window.location.href='Seller/myproducts_details.php'">My Products Details</button>
-            <button class="cta-button myproducts-btn" onclick="window.location.href='mystory.php'">My Story</button>
+            <button class="cta-button myproducts-btn" onclick="window.location.href='Seller/mystory.php'">My Story</button>
             <br><br>
         <?php endif; ?>
     <?php endif; ?>
