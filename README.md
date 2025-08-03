@@ -14,6 +14,27 @@ InclusiKart places a strong emphasis on **accessibility**, ensuring that everyon
 - 🔊 **Basic Voice navigation** for users with visual or motor impairments  
 - 🎨 Clean, user-friendly design for better usability
 
+
+## 🖼️ Project Screenshots
+
+### 🔒 Login Page
+![Login Page](ScreenShots/profile.png)
+
+### 🛒 Cart Page
+![Cart Page](ScreenShots/cart.png)
+
+### 🏠 Home Page
+![Home Page](ScreenShots/home.png)
+
+### 🛍️ Products Page
+![Products Page](ScreenShots/products.png)
+
+### 🧾 Shop Interface
+![Shop Interface](ScreenShots/shop.png)
+
+### 🛠️ Admin Dashboard
+![Admin Dashboard](ScreenShots/admindashboard.png)
+
 ## ✨ FEATURES
 
 ### 👤 User Management
@@ -44,43 +65,6 @@ InclusiKart places a strong emphasis on **accessibility**, ensuring that everyon
 - **Development Tools:** Visual Studio Code, XAMPP  
 - **Status:** Actively maintained and version-controlled via GitHub
 
-##  CORE ALGORITHMS
-
-### 1. User Authentication & Profile Verification
-- Validates login using hashed passwords
-- On first login, seller submits additional personal and disability-related information
-- Admin verifies the documents
-- Only verified sellers can list products
-
-### 2. Product Upload & Verification
-- Sellers can upload product images, details, and pricing
-- Admin verifies the product’s authenticity and appropriateness
-- Verified products become visible to buyers
-
-### 3. Story Submission & Review
-- Sellers submit stories about their journey and challenges
-- Admin reviews and approves stories before making them public
-
-### 4. Order Management
-- Buyers add products to cart and place orders
-- Order details stored securely and accessible to both buyer and seller
-
-## HOW IT WORKS
-
-1. **Seller Registration:**
-   - Seller signs up and submits documents for verification
-
-2. **Profile Review:**
-   - Admin verifies the details and approves or rejects the seller
-
-3. **Product, Story & Donation Request:**
-   - Verified sellers list their products, submit personal stories, and can seek financial support through a donation request form
-
-4. **Admin Moderation:**
-   - Admin verifies uploaded content including products, stories, and donation requests
-
-5. **Buyer Interaction:**
-   - Buyers browse the platform, explore stories, purchase products, and view approved donation requests
 
 ## SETUP INSTRUCTIONS
 
