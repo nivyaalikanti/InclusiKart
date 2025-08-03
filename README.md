@@ -91,7 +91,7 @@ Make sure the following software is installed:
 
 1. Open your browser and go to `http://localhost/phpmyadmin`
 2. Click on **Import**
-3. Choose the `disability_platform.sql` file from your project directory
+3. Choose the `SQL-Database/inclusikart.sql` file from your project directory
 4. Click **Go** to import the database
 
 ---
@@ -113,7 +113,7 @@ Make sure the following software is installed:
    $host = 'localhost';
    $user = 'root';
    $password = '';
-   $database = 'disability_platform';
+   $database = 'inclusikart';
    ```
 
 ---
@@ -141,7 +141,7 @@ Replace `InclusiKart` with your actual project folder name if different.
 
 ### **Default Verifier Credentials**
 
-You can log in to the [Admin Dashboard](http://localhost/InclusiKart/admin_dashboard.php) using these default credentials:
+You can log in to the [Admin Dashboard](http://localhost/InclusiKart/Admin/admin_dashboard.php) using these default credentials:
 
 | Role             | Username       | Password     |
 | ---------------- | -------------- | ------------ |
