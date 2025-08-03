@@ -35,7 +35,7 @@ if ($isLoggedIn) {
 
 if ($isLoggedIn) {
     if ($status === "pending") {
-        $statusMessage = '<p style="color: red;">Please <a href="submit_verification.php">submit your details</a> for verification.</p>';
+        $statusMessage = '<p style="color: red;">Please <a href="Seller/submit_verification.php">submit your details</a> for verification.</p>';
     } elseif ($status === "submitted") {
         $statusMessage = '<p style="color: orange;">Your details have been sent for verification. Please wait for our response.</p>';
     } elseif ($status === "verified") {
@@ -359,7 +359,7 @@ if ($isLoggedIn) {
 
                 <select onchange="location = this.value;">
                     <option disabled selected>Login</option>
-                    <option value="login.php">Seller Login</option>
+                    <option value="Seller/login.php">Seller Login</option>
                     <option value="Buyer/blogin.php">Buyer  Login</option>
                 </select>
                 <select onchange="location = this.value;">
@@ -409,18 +409,18 @@ if ($isLoggedIn) {
 
         <?php if ($status === "verified"): ?>
             <br>
-            <button class="cta-button" onclick="window.location.href='sell.php'">Register a Product</button>
-            <button class="cta-button" onclick="window.location.href='share_story.php'">Share My Story</button>
-            <button class="cta-button" onclick="window.location.href='help.php'">Help</button><br><br>
-            <button id="my-products-btn" class="cta-button myproducts-btn" onclick="window.location.href='myproducts_details.php'">My Products Details</button>
-            <button  class="cta-button myproducts-btn" onclick="window.location.href='mystory.php'">My Story</button>
+            <button class="cta-button" onclick="window.location.href='Seller/sell.php'">Register a Product</button>
+            <button class="cta-button" onclick="window.location.href='Seller/share_story.php'">Share My Story</button>
+            <button class="cta-button" onclick="window.location.href='Seller/help.php'">Help</button><br><br>
+            <button id="my-products-btn" class="cta-button myproducts-btn" onclick="window.location.href='Seller/myproducts_details.php'">My Products Details</button>
+            <button  class="cta-button myproducts-btn" onclick="window.location.href='Seller/mystory.php'">My Story</button>
             <br><br>
         <?php endif; ?>
     <?php endif; ?>
     <?php if ($isBuyer): ?>
         <button class="cta-button myproducts-btn" onclick="window.location.href='Buyer/order_history.php'">My Orders</button>
     <?php endif; ?>
-    <button class="logout-btn" onclick="window.location.href='logout.php'">Logout</button>
+    <button class="logout-btn" onclick="window.location.href='Buyer/logout.php'">Logout</button>
     <button class="close-btn" id="close-popup">Close</button>
 </div>
 
