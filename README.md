@@ -11,7 +11,7 @@ The platform promotes **inclusion and economic empowerment** by giving specially
 
 InclusiKart places a strong emphasis on **accessibility**, ensuring that everyone can use the platform with ease. Key features include:
 
-- 🔊 **Voice navigation** for users with visual or motor impairments  
+- 🔊 **Basic Voice navigation** for users with visual or motor impairments  
 - 🎨 Clean, user-friendly design for better usability
 
 ## ✨ FEATURES
