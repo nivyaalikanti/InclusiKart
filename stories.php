@@ -24,13 +24,13 @@ $result = $stmt->get_result();
             <h2><?= htmlspecialchars($story['title']) ?></h2>
             <?php if ($story['video_url']): ?>
                 <video width="320" height="240" controls>
-                    <source src="<?= htmlspecialchars($story['video_url']) ?>" type="video/mp4">
+                    <source src="Seller/<?= htmlspecialchars($story['video_url']) ?>" type="video/mp4">
                 </video>
             <?php endif; ?>
             <p><?= htmlspecialchars($story['description']) ?></p>
             <br>
             <?php if ($story['image_url']): ?>
-                <img id="image"src="<?= htmlspecialchars($story['image_url']) ?>" width="200" alt="Story Image">
+                <img id="image"src="Seller/<?= htmlspecialchars($story['image_url']) ?>" width="200" alt="Story Image">
             <?php endif; ?>
         </div>
     <?php endwhile; ?>
