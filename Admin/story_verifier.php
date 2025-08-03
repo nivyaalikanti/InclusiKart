@@ -32,11 +32,11 @@ $result = $stmt->get_result();
             <p><?= htmlspecialchars($story['description']) ?></p>
             <?php if ($story['video_url']): ?>
                 <video width="320" height="240" controls>
-                    <source src="../<?= htmlspecialchars($story['video_url']) ?>" type="video/mp4">
+                    <source src="../Seller/<?= htmlspecialchars($story['video_url']) ?>" type="video/mp4">
                 </video>
             <?php endif; ?>
             <?php if ($story['image_url']): ?>
-                <img src="../<?= htmlspecialchars($story['image_url']) ?>" width="200" alt="Story Image">
+                <img src="../Seller/<?= htmlspecialchars($story['image_url']) ?>" width="200" alt="Story Image">
             <?php endif; ?>
 
             <!-- Approve/Reject options -->

@@ -36,7 +36,7 @@ $result = $conn->query("SELECT u.id, u.username, d.name, d.dob, d.address, d.dis
         <p><strong>Address:</strong> <?= htmlspecialchars($row['address']) ?></p>
         <p><strong>Disability Type:</strong> <?= htmlspecialchars($row['disability_type']) ?></p>
         <p><strong>Document:</strong> 
-          <a href="/InclusiKart/<?= htmlspecialchars($row['document']) ?>" target="_blank" class="document-link">View document</a>
+          <a href="/InclusiKart/Seller/<?= htmlspecialchars($row['document']) ?>" target="_blank" class="document-link">View document</a>
         </p>
         <a href="approve.php?id=<?= $row['id'] ?>" class="approve">Approve</a>
         <a href="reject.php?id=<?= $row['id'] ?>" class="reject">Reject</a>
