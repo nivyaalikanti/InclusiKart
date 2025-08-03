@@ -24,8 +24,7 @@ $result = $stmt->get_result();
             <h2><?= htmlspecialchars($story['title']) ?></h2>
             <?php if ($story['video_url']): ?>
                 <video width="320" height="240" controls>
-                    <source src="Seller/<?= htmlspecialchars($story['video_url']) ?>" type="video/mp4">
-                </video>
+                    <source src="Seller/<?= htmlspecialchars($story['video_url']) ?>" type="video/mp4"></video>
             <?php endif; ?>
             <p><?= htmlspecialchars($story['description']) ?></p>
             <br>
