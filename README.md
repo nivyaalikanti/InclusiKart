@@ -16,17 +16,13 @@ InclusiKart places a strong emphasis on **accessibility**, ensuring that everyon
 
 
 ## 🖼️ Project Screenshots
-
-### 🔒 Login Page
-![Login Page](ScreenShots/profile.png)
-
-### 🛒 Cart Page
-![Cart Page](ScreenShots/cart.png)
-
 ### 🏠 Home Page
 ![Home Page](ScreenShots/home.png)
 
-### 🛍️ Products Page
+### 🔒 Seller Profile
+![Login Page](ScreenShots/profile.png)
+
+### 🛍️ Products Details
 ![Products Page](ScreenShots/products.png)
 
 ### 🧾 Shop Interface
@@ -34,6 +30,11 @@ InclusiKart places a strong emphasis on **accessibility**, ensuring that everyon
 
 ### 🛠️ Admin Dashboard
 ![Admin Dashboard](ScreenShots/admindashboard.png)
+
+### 🛒 Cart Page
+![Cart Page](ScreenShots/cart.png)
+
+
 
 ## ✨ FEATURES
 
